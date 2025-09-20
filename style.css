@@ -2,19 +2,19 @@
 body {
     font-family: roboto, sans-serif;
     margin: 0;
-    padding: .55em;
+    padding: .55rem;
     background-color: #ffffff;
     overflow-x: hidden;
 }
 header p {
     text-align: center;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     color: #333;
-    padding: .55em;
+    padding: .55rem;
 }
 nav {
     background-color: #0071c5;
-    padding: 2em 1em;
+    padding: 2rem 1rem;
     text-align: center;
     justify-content: space-between;
     display: flex;
@@ -22,21 +22,21 @@ nav {
     align-items: center;
 }
 .nav-logo {
-  width:7em;
+  width:7rem;
   height:auto;
-  margin-right: 10em;
-  padding-left: 1em;
+  margin-right: 10rem;
+  padding-left: 1rem;
 }
 .nav-links {
   list-style: none;
   display: flex;
-  gap: .55em;
+  gap: .55rem;
   margin: 0;
-  padding: .55em;
-  font-size: 1.25em;
+  padding: .55rem;
+  font-size: 1.25rem;
 }
 .nav-links li {
-  margin-left: 1em;
+  margin-left: 1rem;
 }
 .nav-links a {
     color: white;
@@ -46,17 +46,17 @@ nav {
 h1 {
     color: #000000;
     text-align: center;
-    margin-top: 1em;
-    padding: .50em;
-    font-size: 2em;
+    margin-top: 1rem;
+    padding: .50rem;
+    font-size: 2rem;
 }
 .carousel {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    gap: 1em;
-    padding-right:0.5em;
-    padding-left:0.5em;
+    gap: 1rem;
+    padding-right:0.5rem;
+    padding-left:0.5rem;
     scroll-behavior: smooth;
     color: #f4f4f4;
     position: relative;
@@ -70,20 +70,20 @@ h1 {
 }
 .carousel-track {
   display: flex;
-  gap: 1em;
+  gap: 1rem;
   overflow-x: auto;
   justify-content: center;
   scroll-snap-type: x mandatory;
-  scroll-padding-left: 3em;
+  scroll-padding-left: 3rem;
   min-width: max-content;
 }
 .card {
     background-color: #3793d8;
-    border-radius: .75em;
+    border-radius: .75rem;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
     flex: 0 0 auto;
     width: 300px;
-    padding: 1em;
+    padding: 1rem;
     scroll-snap-align: start;
     text-align: center;
     transition: transform 0.3s ease, opacity 0.3s ease;
@@ -98,13 +98,13 @@ h1 {
 }
 .card:hover .card-info {
   opacity: 1;
-  max-height: 10em;
+  max-height: 10rem;
 }
 .card img {
     width: 100%;
     height: auto;
-    border-radius: .55em;
-    margin-bottom: .55em;
+    border-radius: .55rem;
+    margin-bottom: .55rem;
     align-items: center;
 }
 .card:hover img {
@@ -123,7 +123,7 @@ h1 {
     }
     .card {
         width: 80%;
-        margin-bottom: 1em;
+        margin-bottom: 1rem;
     }
     nav {
         flex-direction: column;
@@ -135,7 +135,7 @@ h1 {
     }
     .nav-links {
         flex-direction: column;
-        gap: .25em;
+        gap: .25rem;
         padding: 0;
     }
     .nav-links li {
@@ -143,7 +143,7 @@ h1 {
     }
     .nav-logo {
         margin-right: 0;
-        margin-bottom: 1em;
+        margin-bottom: 1rem;
     }
 }
 * [
