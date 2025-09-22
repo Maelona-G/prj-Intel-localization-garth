@@ -10,14 +10,36 @@
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme>
+      <div class="container-fluid">
       <img src="img/intel-header-logo.svg" alt="intel logo" class="nav-logo" />
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Sustainability</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Sustainability</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+       <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
     </nav>
       <h1>
         Sustainability Through the Ages
@@ -30,7 +52,7 @@
   </header>
   <section class="carousel" id="carousel-container">
    <div class="carousel-track">
-    <div class="card" style="width: 18rem;" id="card1">
+   <div class="card text-bg-primary mb-3" style="max-width: 18rem;" id="card-info">
       <img src="img/1.jpg" class="card-img-top" alt="Intel Founders Robert Noyce and Gordon Moore" id="img1"/>
       <div class="card-body">
       <h3>1968</h3>
@@ -39,17 +61,16 @@
        decades of technological innovation.</p>
       </div>
     </div>
-   
-    <div class="card" style="width: 18rem;" id="card2">
+   <div class="card text-bg-primary mb-3" style="max-width: 18rem;" id="card-info">
       <img src="img/2.jpg" class="card-img-top" alt="Intel 4004 Microprocessor" id="img2"/>
-      <div class="card-body">
-      <h3>1971</h3>
-      <h4 class="card-title">First Microprocessor</h4>
-      <p class="card-text">Intel debuts the 4004, the world's first commercial microprocessor, igniting the microprocessor revolution and propelling the future of computing devices.</p>
+      <div class="card-overlay">
+        <h3>1971</h3>
+        <h4 class="card-title">First Microprocessor</h4>
+       <p class="card-text">Intel debuts the 4004, the world's first commercial microprocessor, igniting the microprocessor revolution and propelling the future of computing devices.</p>
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;" id="card3">
+   <div class="card text-bg-primary mb-3" style="max-width: 18rem;" id="card-info">
       <img src="img/3.jpg" class="card-img-top" alt="Intel 8086 Processor" id="img3"/>
       <div class="card-body">
       <h3>1978</h3>
@@ -58,7 +79,7 @@
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;" id="card4">
+   <div class="card text-bg-primary mb-3" style="max-width: 18rem;" id="card-info">
       <img src="img/4.jpg" class="card-img-top" alt="Intel 386 Processor" id="img4"/>
       <div class="card-body">
       <h3>1985</h3>
@@ -67,7 +88,7 @@
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;" id="card5">
+   <div class="card text-bg-primary mb-3" style="max-width: 18rem;" id="card-info">
       <img src="img/create an image of renewable energy for intel (1).jpg" class="card-img-top" alt="Renewable Energy" id="img5"/>
       <div class="card-body">
       <h3>2006</h3>
@@ -76,7 +97,7 @@
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;" id="card6">
+   <div class="card text-bg-primary mb-3" style="max-width: 18rem;" id="card-info">
       <img src="img/create an image of waste reduction for intel.jpg" class="card-img-top" alt="Waste Reduction" id="img6"/>
       <div class="card-body">
       <h3>2020</h3>
@@ -85,7 +106,7 @@
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;" id="card7">
+   <div class="card text-bg-primary mb-3" style="max-width: 18rem;" id="card-info">
       <img src="img/Intel announces its commitment to achieve net-zero greenhouse gas emissions (Scope 1 and 2) across its global operations by 2040, building on years of environmental initiatives.__create an image based on this description.jpg" class="card-img-top" alt="Net-Zero Commitment" id="img7"/>
       <div class="card-body">
       <h3>2022</h3>
@@ -94,7 +115,7 @@
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;" id="card8">
+   <div class="card text-bg-primary mb-3" style="max-width: 18rem;" id="card-info">
       <img src="img/The company achieves 99% renewable electricity usage worldwide, helping to drastically lower carbon emissions and driving progress toward Intel's long-term sustainability goals.__create an image based on this description.jpg" class="card-img-top" alt="Renewable Electricity" id="img8"/>
       <div class="card-body">
       <h3>2023</h3>
@@ -103,7 +124,7 @@
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;" id="card9">
+   <div class="card text-bg-primary mb-3" style="max-width: 18rem;" id="card-info">
       <img src="img/Intel hosts its first Sustainability Summit, uniting suppliers, government officials, and industry leaders to collaborate on next-generation sustainable semiconductor manufacturing.__create an image based on this description.jpg" class="card-img-top" alt="Sustainability Summit" id="img9"/>
       <div class="card-body">
       <h3>2024</h3>
@@ -113,24 +134,39 @@
     </div>
   </div>
   </section>
-  <p>Scroll to view timeline | Hover over cards to learn more!</p>
-*/ underneath carousel */
-<div class="container text-center">
-  <div class="row">
+  <p>Scroll to view timeline</p>
+<div class="container text-center py-5">
+  <div class="row align-items-center">
     <div class="col">
-      1 of 3
+      <p class="fs-4"><strong>Learn more about out sustainability practices
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-recycle" viewBox="0 0 16 16">
+  <path d="M9.302 1.256a1.5 1.5 0 0 0-2.604 0l-1.704 2.98a.5.5 0 0 0 .869.497l1.703-2.981a.5.5 0 0 1 .868 0l2.54 4.444-1.256-.337a.5.5 0 1 0-.26.966l2.415.647a.5.5 0 0 0 .613-.353l.647-2.415a.5.5 0 1 0-.966-.259l-.333 1.242zM2.973 7.773l-1.255.337a.5.5 0 1 1-.26-.966l2.416-.647a.5.5 0 0 1 .612.353l.647 2.415a.5.5 0 0 1-.966.259l-.333-1.242-2.545 4.454a.5.5 0 0 0 .434.748H5a.5.5 0 0 1 0 1H1.723A1.5 1.5 0 0 1 .421 12.24zm10.89 1.463a.5.5 0 1 0-.868.496l1.716 3.004a.5.5 0 0 1-.434.748h-5.57l.647-.646a.5.5 0 1 0-.708-.707l-1.5 1.5a.5.5 0 0 0 0 .707l1.5 1.5a.5.5 0 1 0 .708-.707l-.647-.647h5.57a1.5 1.5 0 0 0 1.302-2.244z"/>
+        </svg>
+      </strong></p>
+      <button type="button" class="btn btn-primary">Read More</button>
     </div>
     <div class="col">
-      2 of 3
+      <p class="fs-4"><strong>Discover Intel's latest innovations
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-hdmi" viewBox="0 0 16 16">
+  <path d="M2.5 7a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1z"/>
+  <path d="M1 5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h.293l.707.707a1 1 0 0 0 .707.293h10.586a1 1 0 0 0 .707-.293l.707-.707H15a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zm0 1h14v3h-.293a1 1 0 0 0-.707.293l-.707.707H2.707L2 9.293A1 1 0 0 0 1.293 9H1z"/>
+        </svg>
+      </strong></p>
+      <button type="button" class="btn btn-primary">Explore</button>
     </div>
     <div class="col">
-      3 of 3
+      <p class="fs-4"><strong>Join our community of tech enthusiasts
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+  <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+        </svg>
+      </strong></p>
+      <button type="button" class="btn btn-primary">Join Now</button>
     </div>
   </div>
 </div>
   <footer>
     <form>
-  <div class="mb-3">
+  <div class="mb-3 py-5">
     <h3>Subscribe to our Sustainability newsletter!</h3>
     <label for="exampleInputEmail1" class="form-label">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
